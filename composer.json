@@ -1,0 +1,6 @@
+{
+  "name": "gravellian/basekit-recipe",
+  "type": "drupal-recipe",
+  "description": "BaseKit recipes (base + features)",
+  "license": "proprietary"
+}

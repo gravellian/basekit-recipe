@@ -1,0 +1,20 @@
+name: BaseKit
+description: Baseline modules and shared configuration for the BaseKit distribution.
+type: recipe
+core_version_requirement: ^11
+
+install:
+  - drupal:layout_builder
+  - drupal:media
+  - drupal:responsive_image
+  - drupal:svg_image
+
+config:
+  import:
+    - recipes/basekit/config
+  actions:
+    # Example theme mapping for region blocks (add entries if you include them):
+    # - config: block.block.gravelle1_site_branding
+    #   op: set
+    #   path: theme
+    #   value: gravelle1
