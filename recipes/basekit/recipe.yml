@@ -6,6 +6,7 @@ install:
   # Core/contrib modules required by shared config and common features.
   - drupal:layout_builder
   - drupal:media
+  - drupal:media_library
   - drupal:responsive_image
   - drupal:image
   - drupal:views
