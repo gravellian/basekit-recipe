@@ -14,6 +14,9 @@ install:
   - drupal:editor
   - drupal:rest
   - drupal:workflows
+  # Admin UX
+  - drupal:admin_toolbar
+  - drupal:admin_toolbar_tools
   # Base content building blocks and storage.
   - drupal:block
   - drupal:block_content
@@ -21,6 +24,24 @@ install:
   - drupal:text
   - drupal:node
   - drupal:taxonomy
+  # Media, SVG, and image tooling
+  - drupal:svg_image
+  - drupal:inline_svg
+  - drupal:crop
+  # Layout builder enhancements and site UX
+  - drupal:layout_builder_modal
+  - drupal:layout_builder_styles
+  - drupal:easy_breadcrumb
+  - drupal:bg_image_formatter
+  # Content formatting and developer tools
+  - drupal:prism
+  - drupal:profile
+  - drupal:token
+  # Navigation and content patterns
+  - drupal:paragraphs
+  - drupal:superfish
+  - drupal:eva
+  - drupal:swiper_formatter
 
 config:
   import:
