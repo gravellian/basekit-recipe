@@ -1,0 +1,21 @@
+langcode: en
+status: true
+format: content
+name: 'Content'
+weight: 0
+filters:
+  filter_html:
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<p> <a> <em> <strong> <ul> <ol> <li> <h2> <h3> <h4> <blockquote> <img> <figure> <figcaption> <br> <span> <code> <pre>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_autop:
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    status: true
+    weight: 0
+    settings: {  }

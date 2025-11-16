@@ -1,0 +1,21 @@
+langcode: en
+status: true
+format: text_only
+name: 'Text only'
+weight: 0
+filters:
+  filter_html:
+    status: true
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_autop:
+    status: false
+    weight: 0
+    settings: {  }
+  filter_url:
+    status: true
+    weight: 0
+    settings: {  }

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.main_33_1x1
+label: 'Main 33 1x1'
+targetEntityType: media
+cache: true

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.main_100_16x9
+label: 'Main 100 16x9'
+targetEntityType: media
+cache: true

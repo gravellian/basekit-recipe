@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.main_25
+label: 'Main 25'
+targetEntityType: media
+cache: true

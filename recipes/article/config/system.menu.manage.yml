@@ -1,0 +1,8 @@
+langcode: en
+status: true
+id: manage
+label: 'Manage'
+description: 'Menu for management links used by admin views'
+locked: false
+module: system
+weight: 0

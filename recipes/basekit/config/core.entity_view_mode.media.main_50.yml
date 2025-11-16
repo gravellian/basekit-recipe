@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.main_50
+label: 'Main 50'
+targetEntityType: media
+cache: true
