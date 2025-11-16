@@ -1,7 +1,6 @@
 name: BaseKit
 description: Baseline modules and shared configuration for the BaseKit distribution.
 type: recipe
-core_version_requirement: ^11
 
 install:
   # Core/contrib modules required by shared config and common features.
@@ -18,7 +17,7 @@ install:
 
 config:
   import:
-    - recipes/basekit/config
+    - "*"
   actions:
     # Example theme mapping for region blocks (add entries if you include them):
     # - config: block.block.gravelle1_site_branding

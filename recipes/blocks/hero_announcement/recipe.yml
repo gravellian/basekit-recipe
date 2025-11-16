@@ -1,7 +1,6 @@
 name: Block - Hero Announcement
 description: Custom block bundle hero_announcement (type + fields + displays).
 type: recipe
-core_version_requirement: ^11
 
 install:
   - drupal:block_content
@@ -11,4 +10,4 @@ install:
 
 config:
   import:
-    - recipes/blocks/hero_announcement/config
+    - "*"

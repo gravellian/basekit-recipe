@@ -1,10 +1,9 @@
 name: Site Aggregate
 description: Aggregates BaseKit + optional features. Enable/disable feature recipes as needed.
 type: recipe
-core_version_requirement: ^11
 
 recipes:
-  - recipes/basekit
-  - recipes/article
-  - recipes/blocks/hero_headline
-  - recipes/blocks/hero_announcement
+  - basekit
+  - article
+  - blocks/hero_headline
+  - blocks/hero_announcement
