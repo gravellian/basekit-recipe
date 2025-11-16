@@ -9,6 +9,7 @@ install:
   - drupal:media_library
   - drupal:responsive_image
   - drupal:image
+  - drupal:focal_point
   - drupal:views
   - drupal:editor
   - drupal:rest
