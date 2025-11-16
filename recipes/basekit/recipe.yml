@@ -4,10 +4,17 @@ type: recipe
 core_version_requirement: ^11
 
 install:
+  # Core/contrib modules required by shared config and common features.
   - drupal:layout_builder
   - drupal:media
   - drupal:responsive_image
   - drupal:svg_image
+  # Add validated plugin/schema providers often referenced by config.
+  - drupal:image
+  - drupal:views
+  - drupal:editor
+  - drupal:rest
+  - drupal:workflows
 
 config:
   import:
