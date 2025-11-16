@@ -2,5 +2,10 @@
   "name": "gravellian/basekit-recipe",
   "type": "drupal-recipe",
   "description": "BaseKit recipes (base + features)",
-  "license": "proprietary"
+  "license": "proprietary",
+  "require": {
+    "drupal/svg_image": "^3.2",
+    "drupal/prism": "^2.2",
+    "drupal/profile": "^1.12"
+  }
 }
