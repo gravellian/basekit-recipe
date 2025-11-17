@@ -7,3 +7,16 @@ recipes:
   - article
   - blocks_hero_headline
   - blocks_hero_announcement
+config:
+  strict: false
+  actions:
+    # Map block placements from BaseKit to the project sub-theme.
+    # Update the value below if your default theme has a different machine name.
+    - config: block.block.basekit_account
+      op: set
+      path: theme
+      value: jsg1
+    - config: block.block.basekit_manage
+      op: set
+      path: theme
+      value: jsg1
