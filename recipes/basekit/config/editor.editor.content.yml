@@ -1,0 +1,40 @@
+uuid: afc7c225-8624-47e2-9339-284c09300194
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.content
+  module:
+    - ckeditor5
+format: content
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - heading
+      - drupalMedia
+      - insertTable
+      - bold
+      - italic
+      - link
+      - bulletedList
+      - numberedList
+      - blockQuote
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    media_media:
+      allow_view_mode_override: false
+image_upload:
+  status: false
+

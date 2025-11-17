@@ -1,0 +1,19 @@
+uuid: 5e5a2d25-6e05-44f6-9f9d-4a1a28d3e4aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.text_only
+  module:
+    - ckeditor5
+format: text_only
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+  plugins: { }
+image_upload:
+  status: false
+
