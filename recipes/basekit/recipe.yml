@@ -44,8 +44,7 @@ install:
   - drupal:swiper_formatter
 
 config:
-  import:
-    - "*"
+  strict: false
   actions:
     # Example theme mapping for region blocks (add entries if you include them):
     # - config: block.block.gravelle1_site_branding

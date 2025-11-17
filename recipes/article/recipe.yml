@@ -10,5 +10,4 @@ install:
   - drupal:taxonomy
 
 config:
-  import:
-    - "*"
+  strict: false

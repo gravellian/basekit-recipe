@@ -9,5 +9,4 @@ install:
   - drupal:image
 
 config:
-  import:
-    - "*"
+  strict: false
