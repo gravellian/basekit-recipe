@@ -9,7 +9,7 @@ dependencies:
     - image.style.main_100_med
     - image.style.main_100_small
   theme:
-    - gravelle1
+    - basekit
 id: main_100
 label: main_100
 image_style_mappings:
@@ -38,5 +38,5 @@ image_style_mappings:
     image_mapping: main_100_handheld
     breakpoint_id: gravelle1.handheld
     multiplier: 1x
-breakpoint_group: gravelle1
+breakpoint_group: basekit
 fallback_image_style: '_original image_'

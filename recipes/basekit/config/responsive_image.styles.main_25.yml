@@ -9,7 +9,7 @@ dependencies:
     - image.style.main_25_small
     - image.style.main_50_handheld
   theme:
-    - gravelle1
+    - basekit
 id: main_25
 label: main_25
 image_style_mappings:
@@ -38,5 +38,5 @@ image_style_mappings:
     image_mapping: main_50_handheld
     breakpoint_id: gravelle1.handheld
     multiplier: 1x
-breakpoint_group: gravelle1
+breakpoint_group: basekit
 fallback_image_style: '_original image_'

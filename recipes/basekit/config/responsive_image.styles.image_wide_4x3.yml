@@ -11,7 +11,7 @@ dependencies:
   module:
     - focal_point
   theme:
-    - gravelle1
+    - basekit
 id: image_wide_4x3
 label: 'Image Wide 4x3'
 image_style_mappings:
@@ -40,5 +40,5 @@ image_style_mappings:
     image_mapping: image_wide_4x3_max
     breakpoint_id: gravelle1.desktop-max
     multiplier: 1x
-breakpoint_group: gravelle1
+breakpoint_group: basekit
 fallback_image_style: original_image
