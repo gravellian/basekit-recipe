@@ -1,0 +1,7 @@
+name: Pages
+description: Shared page content types (page, page_config) used across BaseKit sites.
+type: recipe
+
+install:
+  - drupal:node
+

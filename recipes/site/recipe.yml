@@ -12,6 +12,7 @@ recipes:
   - blocks_hero_headline
   - blocks_hero_announcement
   - blocks_common
+  - pages
   - paragraphs_base
   - profile_author
 config:
