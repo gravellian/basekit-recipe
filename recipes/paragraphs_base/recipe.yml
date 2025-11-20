@@ -1,0 +1,7 @@
+name: Paragraphs Base
+description: Base paragraph types (media item, topic) and fields shared across BaseKit sites.
+type: recipe
+
+install:
+  - drupal:paragraphs
+

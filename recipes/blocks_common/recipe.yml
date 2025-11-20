@@ -1,0 +1,11 @@
+name: Common Blocks
+description: Shared custom block types and displays (excluding Basic).
+type: recipe
+
+install:
+  - drupal:block
+  - drupal:block_content
+  - drupal:media
+  - drupal:image
+  - drupal:focal_point
+

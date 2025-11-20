@@ -2,21 +2,29 @@ name: Site Aggregate
 description: Aggregates BaseKit + optional features. Enable/disable feature recipes as needed.
 type: recipe
  
+install:
+  # Ensure the distribution setup module stays enabled when applying this recipe.
+  - basekit_setup
+
 recipes:
   - basekit
   - article
   - blocks_hero_headline
   - blocks_hero_announcement
+  - blocks_common
+  - paragraphs_base
+  - profile_author
 config:
   strict: false
   actions:
-    # Map block placements from BaseKit to the project sub-theme.
-    # Update the value below if your default theme has a different machine name.
-    - config: block.block.basekit_account
-      op: set
-      path: theme
-      value: jsg1
-    - config: block.block.basekit_manage
-      op: set
-      path: theme
-      value: jsg1
+    block:
+      # Map block placements from BaseKit to the project sub-theme.
+      # Update the value below if your default theme has a different machine name.
+      - config: block.block.basekit_account
+        op: set
+        path: theme
+        value: jsg1
+      - config: block.block.basekit_manage
+        op: set
+        path: theme
+        value: jsg1

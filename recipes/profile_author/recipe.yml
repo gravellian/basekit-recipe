@@ -1,0 +1,7 @@
+name: Profile Author
+description: Author profile type and fields shared across BaseKit sites.
+type: recipe
+
+install:
+  - drupal:profile
+
