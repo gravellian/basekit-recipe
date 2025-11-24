@@ -6,9 +6,9 @@ dependencies:
   module:
     - system
   theme:
-    - basekit
+    - basekit_site
 id: basekit_footer
-theme: basekit
+theme: basekit_site
 region: footer
 weight: 0
 provider: null

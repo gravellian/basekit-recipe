@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - basekit
+    - basekit_site
 id: basekit_site_branding
-theme: basekit
+theme: basekit_site
 region: header
 weight: 0
 provider: null

@@ -4,9 +4,9 @@ dependencies:
   module:
     - system
   theme:
-    - basekit
+    - basekit_site
 id: basekit_breadcrumbs
-theme: basekit
+theme: basekit_site
 region: breadcrumb
 weight: 0
 provider: null

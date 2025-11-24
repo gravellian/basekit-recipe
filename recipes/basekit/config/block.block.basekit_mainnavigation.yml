@@ -6,9 +6,9 @@ dependencies:
   module:
     - superfish
   theme:
-    - basekit
+    - basekit_site
 id: basekit_mainnavigation
-theme: basekit
+theme: basekit_site
 region: sidebar_first
 weight: 0
 provider: null
