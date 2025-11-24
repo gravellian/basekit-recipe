@@ -5,6 +5,9 @@ type: recipe
 install:
   # Ensure the distribution setup module stays enabled when applying this recipe.
   - basekit_setup
+  - basekit
+  - basekit_site
+  - superfish
 
 recipes:
   - basekit

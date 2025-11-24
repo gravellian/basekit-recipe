@@ -16,4 +16,6 @@ settings:
   label: 'Site branding'
   label_display: '0'
   provider: system
+  use_site_name: false
+  use_site_slogan: false
 visibility: {  }
