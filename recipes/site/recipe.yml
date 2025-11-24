@@ -18,14 +18,42 @@ recipes:
 config:
   strict: false
   actions:
+    # Set the default/admin theme to the starter sub-theme bundled with the project template.
+    system.theme:
+      - op: set
+        path: default
+        value: basekit_site
+      - op: set
+        path: admin
+        value: basekit_site
     block:
       # Map block placements from BaseKit to the project sub-theme.
       # Update the value below if your default theme has a different machine name.
       - config: block.block.basekit_account
         op: set
         path: theme
-        value: jsg1
+        value: basekit_site
       - config: block.block.basekit_manage
         op: set
         path: theme
-        value: jsg1
+        value: basekit_site
+      - config: block.block.basekit_site_branding
+        op: set
+        path: theme
+        value: basekit_site
+      - config: block.block.basekit_breadcrumbs
+        op: set
+        path: theme
+        value: basekit_site
+      - config: block.block.basekit_main_menu
+        op: set
+        path: theme
+        value: basekit_site
+      - config: block.block.basekit_mainnavigation
+        op: set
+        path: theme
+        value: basekit_site
+      - config: block.block.basekit_footer
+        op: set
+        path: theme
+        value: basekit_site

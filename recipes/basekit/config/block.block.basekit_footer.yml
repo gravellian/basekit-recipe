@@ -2,22 +2,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.manage
+    - system.menu.footer
   module:
-    - superfish
+    - system
   theme:
     - basekit
-id: basekit_manage
+id: basekit_footer
 theme: basekit
-region: manage
+region: footer
 weight: 0
 provider: null
-plugin: 'superfish:manage'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'superfish:manage'
-  label: 'Manage'
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
   label_display: '0'
-  provider: superfish
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

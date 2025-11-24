@@ -8,7 +8,7 @@ dependencies:
     - field.field.block_content.image_slider.field_block_images
     - responsive_image.styles.main_100_21x9
   module:
-    - gravelle_slider
+    - swiper_formatter
 id: block_content.image_slider.main_100_21x9
 targetEntityType: block_content
 bundle: image_slider

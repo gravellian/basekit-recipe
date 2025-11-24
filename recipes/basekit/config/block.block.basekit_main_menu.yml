@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.manage
+    - system.menu.main
   module:
     - superfish
   theme:
     - basekit
-id: basekit_manage
+id: basekit_main_menu
 theme: basekit
-region: manage
+region: header
 weight: 0
 provider: null
-plugin: 'superfish:manage'
+plugin: 'superfish:main'
 settings:
-  id: 'superfish:manage'
-  label: 'Manage'
+  id: 'superfish:main'
+  label: 'Main navigation'
   label_display: '0'
   provider: superfish
   level: 1
