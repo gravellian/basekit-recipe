@@ -1,5 +1,5 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -7,15 +7,15 @@ dependencies:
     - system
   theme:
     - basekit_site
-id: basekit_main_menu
+id: basekit_site_main_menu
 theme: basekit_site
-region: header
-weight: -5
+region: ''
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Main navigation (auto)'
   label_display: '0'
   provider: system
   level: 1

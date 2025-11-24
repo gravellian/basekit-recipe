@@ -4,7 +4,7 @@ dependencies:
   config:
     - system.menu.main
   module:
-    - superfish
+    - system
   theme:
     - basekit_site
 id: basekit_mainnavigation
@@ -12,12 +12,12 @@ theme: basekit_site
 region: sidebar_first
 weight: 0
 provider: null
-plugin: 'superfish:main'
+plugin: 'system_menu_block:main'
 settings:
-  id: 'superfish:main'
+  id: 'system_menu_block:main'
   label: 'Main navigation'
   label_display: '0'
-  provider: superfish
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

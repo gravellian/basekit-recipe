@@ -1,19 +1,19 @@
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
     - basekit_site
-id: basekit_site_branding
+id: basekit_site_site_branding
 theme: basekit_site
-region: header
-weight: -10
+region: ''
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Site branding (auto)'
   label_display: '0'
   provider: system
   use_site_name: false

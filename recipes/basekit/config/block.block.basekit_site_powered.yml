@@ -1,19 +1,19 @@
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
     - basekit_site
-id: basekit_breadcrumbs
+id: basekit_site_powered
 theme: basekit_site
-region: manage
+region: ''
 weight: 0
 provider: null
-plugin: system_breadcrumb_block
+plugin: system_powered_by_block
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
   label_display: '0'
   provider: system
 visibility: {  }

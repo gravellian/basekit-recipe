@@ -7,7 +7,7 @@ dependencies:
     - basekit_site
 id: basekit_account
 theme: basekit_site
-region: header
+region: manage
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'
