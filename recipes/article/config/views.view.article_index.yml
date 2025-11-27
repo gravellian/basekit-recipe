@@ -187,7 +187,7 @@ display:
         type: normal
         title: Articles
         description: ''
-        weight: -49
+        weight: 10
         expanded: false
         menu_name: main
         parent: ''

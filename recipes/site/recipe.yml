@@ -6,6 +6,7 @@ install:
   - basekit
   - basekit_site
   - superfish
+  - simple_sitemap
 
 recipes:
   - basekit
