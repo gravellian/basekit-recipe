@@ -5,15 +5,15 @@ dependencies:
     - system
   theme:
     - basekit_site
-id: basekit_breadcrumbs
+id: basekit_site_user_account_menu
 theme: basekit_site
-region: utility_breadcrumb
-weight: -5
+region: utility_account
+weight: 0
 provider: null
-plugin: system_breadcrumb_block
+plugin: 'system_menu_block:account'
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
+  id: 'system_menu_block:account'
+  label: 'User account menu (core)'
   label_display: '0'
   provider: system
 visibility: {  }

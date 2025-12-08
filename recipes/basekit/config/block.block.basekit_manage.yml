@@ -9,8 +9,8 @@ dependencies:
     - basekit_site
 id: basekit_manage
 theme: basekit_site
-region: manage
-weight: 0
+region: utility_manage
+weight: -10
 provider: null
 plugin: 'superfish:manage'
 settings:

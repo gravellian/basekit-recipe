@@ -5,15 +5,17 @@ dependencies:
     - system
   theme:
     - basekit_site
-id: basekit_site_page_title
+id: basekit_site_primary_local_tasks
 theme: basekit_site
-region: title
+region: actions
 weight: -10
 provider: null
-plugin: page_title_block
+plugin: local_tasks_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: local_tasks_block
+  label: 'Primary tabs'
   label_display: '0'
   provider: core
+  primary: true
+  secondary: false
 visibility: {  }
