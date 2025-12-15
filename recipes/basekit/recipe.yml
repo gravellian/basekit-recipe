@@ -13,7 +13,6 @@ install:
   - drupal:views
   - drupal:editor
   - drupal:ckeditor5
-  - drupal:rest
   - drupal:workflows
   # Admin UX
   - drupal:admin_toolbar
