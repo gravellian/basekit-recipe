@@ -42,6 +42,7 @@ install:
   # Navigation and content patterns
   - drupal:paragraphs
   - drupal:superfish
+  - drupal:menu_block
   - drupal:eva
   - drupal:swiper_formatter
   # Config management tooling
