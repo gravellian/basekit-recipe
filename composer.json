@@ -20,6 +20,7 @@
     "drupal/paragraphs": "^1.19",
     "drupal/superfish": "^1.13",
     "drupal/eva": "^3.1",
-    "drupal/swiper_formatter": "^2.0"
+    "drupal/swiper_formatter": "^2.0",
+    "drupal/twig_tweak": "^3.2"
   }
 }

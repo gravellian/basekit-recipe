@@ -45,6 +45,7 @@ install:
   - drupal:menu_block
   - drupal:eva
   - drupal:swiper_formatter
+  - drupal:twig_tweak
   # Config management tooling
   - drupal:config_split
 
