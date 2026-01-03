@@ -499,6 +499,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: manage
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -524,7 +525,7 @@ display:
         title: 'Manage Content'
         description: ''
         weight: 0
-        expanded: false
+        expanded: true
         menu_name: manage
         parent: ''
         context: '0'

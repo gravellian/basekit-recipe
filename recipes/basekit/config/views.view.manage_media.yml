@@ -1,18 +1,21 @@
-uuid: 0cd7cc22-cc57-4061-a35d-1a1d84033a81
+uuid: 21186281-6b03-44d6-a36c-60ffab20f88b
 langcode: en
 status: true
 dependencies:
   config:
+    - image.style.manage_thumb
     - system.menu.manage
   module:
+    - media
+    - svg_image
     - user
-id: manage_users
-label: 'Manage Users'
+id: manage_media
+label: 'Manage Media'
 module: views
 description: ''
 tag: ''
-base_table: users_field_data
-base_field: uid
+base_table: media_field_data
+base_field: mid
 display:
   default:
     id: default
@@ -20,19 +23,19 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Manage Users'
+      title: 'Manage Media'
       fields:
-        uid:
-          id: uid
-          table: users_field_data
-          field: uid
+        thumbnail__target_id:
+          id: thumbnail__target_id
+          table: media_field_data
+          field: thumbnail__target_id
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
-          entity_field: uid
+          entity_type: media
+          entity_field: thumbnail
           plugin_id: field
-          label: ID
+          label: Media
           exclude: false
           alter:
             alter_text: false
@@ -73,12 +76,18 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: number_integer
+          click_sort_column: target_id
+          type: image
           settings:
-            thousand_separator: ''
-            prefix_suffix: true
-          group_column: value
+            image_link: ''
+            image_style: manage_thumb
+            image_loading:
+              attribute: lazy
+            svg_attributes:
+              width: 50
+              height: 50
+            svg_render_as_image: true
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -90,13 +99,13 @@ display:
           field_api_classes: false
         name:
           id: name
-          table: users_field_data
+          table: media_field_data
           field: name
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
-          entity_field: name
+          entity_type: media
+          entity_field: media
           plugin_id: field
           label: Name
           exclude: false
@@ -122,149 +131,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: user_name
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        mail:
-          id: mail
-          table: users_field_data
-          field: mail
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: user
-          entity_field: mail
-          plugin_id: field
-          label: Email
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: basic_string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        created:
-          id: created
-          table: users_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: user
-          entity_field: created
-          plugin_id: field
-          label: Created
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: timestamp
+          type: string
           settings:
-            date_format: medium
-            custom_date_format: ''
-            timezone: ''
-            tooltip:
-              date_format: long
-              custom_date_format: ''
-            time_diff:
-              enabled: false
-              future_format: '@interval hence'
-              past_format: '@interval ago'
-              granularity: 2
-              refresh: 60
-              description: ''
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -275,17 +144,17 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        status:
-          id: status
-          table: users_field_data
-          field: status
+        bundle:
+          id: bundle
+          table: media_field_data
+          field: bundle
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
-          entity_field: status
+          entity_type: media
+          entity_field: bundle
           plugin_id: field
-          label: Status
+          label: 'Media type'
           exclude: false
           alter:
             alter_text: false
@@ -326,13 +195,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: boolean
+          click_sort_column: target_id
+          type: entity_reference_label
           settings:
-            format: default
-            format_custom_false: ''
-            format_custom_true: ''
-          group_column: value
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -344,12 +211,12 @@ display:
           field_api_classes: false
         operations:
           id: operations
-          table: users
+          table: media
           field: operations
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
+          entity_type: media
           plugin_id: entity_operations
           label: Operations
           exclude: false
@@ -425,41 +292,96 @@ display:
       access:
         type: perm
         options:
-          perm: 'access user profiles'
+          perm: 'update media'
       cache:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: users_field_data
-          field: created
+      sorts: {  }
+      arguments: {  }
+      filters:
+        bundle:
+          id: bundle
+          table: media_field_data
+          field: bundle
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: user
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-      arguments: {  }
-      filters:
-        status:
-          id: status
-          table: users_field_data
-          field: status
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
-          value: '1'
+          entity_type: media
+          entity_field: bundle
+          plugin_id: bundle
+          operator: in
+          value: {  }
           group: 1
+          exposed: true
           expose:
-            operator: ''
+            operator_id: bundle_op
+            label: 'Media type'
+            description: ''
+            use_operator: false
+            operator: bundle_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: bundle
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        name:
+          id: name
+          table: media_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: media
+          entity_field: name
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Name
+            description: ''
+            use_operator: false
+            operator: name_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: name
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: table
       row:
@@ -482,6 +404,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags: {  }
@@ -492,21 +415,22 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: manage/users
+      path: manage/media
       menu:
         type: normal
-        title: 'Manage Users'
+        title: 'Manage Media'
         description: ''
         weight: 0
-        expanded: true
+        expanded: false
         menu_name: manage
-        parent: ''
+        parent: 'views_view:views.manage_content.page_1'
         context: '0'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags: {  }

@@ -442,6 +442,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: manage
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -467,9 +468,10 @@ display:
         title: 'Manage Articles'
         description: 'Manage Articles'
         weight: 0
+        enabled: false
         expanded: false
         menu_name: manage
-        parent: 'views_view:views.manage_content.page_1'
+        parent: ''
         context: '0'
     cache_metadata:
       max-age: -1
