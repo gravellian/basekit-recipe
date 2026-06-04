@@ -21,9 +21,6 @@ config:
   strict: false
   actions:
     system.theme:
-      - op: set
-        path: default
-        value: basekit_site
-      - op: set
-        path: admin
-        value: basekit_site
+      simpleConfigUpdate:
+        default: basekit_site
+        admin: basekit_site
