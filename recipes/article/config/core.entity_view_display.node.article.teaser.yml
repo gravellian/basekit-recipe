@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - field.field.node.article.field_article_body
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - image.style.medium
-    - node.type.article
+  - core.entity_view_mode.node.teaser
+  - field.field.node.article.field_article_body
+  - field.field.node.article.field_image
+  - field.field.node.article.field_tags
+  - image.style.medium
+  - node.type.article
   module:
-    - svg_image
-    - user
+  - svg_image
+  - user
 _core:
   default_config_hash: O8PxzfG8DOHHRu6M23kwR6TDPq_MNfYQ10Mp367ICUQ
 id: node.article.teaser
@@ -27,7 +27,7 @@ content:
       image_style: medium
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: -1
     region: content
   field_tags:
@@ -35,11 +35,9 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
+    third_party_settings: {}
     weight: 10
-    region: content
-  links:
-    weight: 100
     region: content
 hidden:
   field_article_body: true
+  links: true
