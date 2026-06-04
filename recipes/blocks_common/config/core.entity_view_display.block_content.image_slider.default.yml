@@ -3,20 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image_slider
-    - field.field.block_content.image_slider.field_block_images
-    - views.view.block_images
-  module:
-    - eva
+  - block_content.type.image_slider
+  - field.field.block_content.image_slider.field_block_images
 id: block_content.image_slider.default
 targetEntityType: block_content
 bundle: image_slider
 mode: default
-content:
-  block_images_entity_view_1:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {}
 hidden:
   field_block_images: true
