@@ -6,7 +6,6 @@ dependencies:
   - block_content.type.image_slider
   - core.entity_view_mode.block_content.main_100_21x9
   - field.field.block_content.image_slider.field_block_images
-  - responsive_image.styles.main_100_21x9
   - swiper_formatter.swiper_formatter.default
   module:
   - swiper_formatter
@@ -16,10 +15,10 @@ bundle: image_slider
 mode: main_100_21x9
 content:
   field_block_images:
-    type: swiper_formatter_responsive_image
+    type: swiper_formatter_image
     label: hidden
     settings:
-      responsive_image_style: main_100_21x9
+      image_style: ''
       image_link: ''
       template: default
     third_party_settings: {}
