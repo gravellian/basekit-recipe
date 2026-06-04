@@ -6,6 +6,9 @@ dependencies:
     - block_content.type.media_slider
     - field.field.block_content.media_slider.field_block_media
     - core.entity_view_mode.block_content.main_100_21x9
+    - swiper_formatter.swiper_formatter.default
+  module:
+    - swiper_formatter
 id: block_content.media_slider.main_100_21x9
 targetEntityType: block_content
 bundle: media_slider

@@ -5,6 +5,9 @@ dependencies:
   config:
     - block_content.type.media_slider
     - field.field.block_content.media_slider.field_block_media
+    - swiper_formatter.swiper_formatter.default
+  module:
+    - swiper_formatter
 id: block_content.media_slider.default
 targetEntityType: block_content
 bundle: media_slider

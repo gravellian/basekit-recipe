@@ -7,6 +7,7 @@ dependencies:
   - core.entity_view_mode.block_content.main_100_21x9
   - field.field.block_content.image_slider.field_block_images
   - responsive_image.styles.main_100_21x9
+  - swiper_formatter.swiper_formatter.default
   module:
   - swiper_formatter
 id: block_content.image_slider.main_100_21x9
