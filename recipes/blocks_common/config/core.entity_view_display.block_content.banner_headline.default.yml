@@ -11,7 +11,7 @@ dependencies:
     - field.field.block_content.banner_headline.field_block_text
   module:
     - link
-    - responsive_bg_image_formatter
+    - bg_image_formatter
     - text
 id: block_content.banner_headline.default
 targetEntityType: block_content
@@ -19,7 +19,7 @@ bundle: banner_headline
 mode: default
 content:
   field_block_background:
-    type: responsive_bg_image_formatter
+    type: bg_image_formatter
     label: hidden
     settings:
       image_style: ''
@@ -50,7 +50,7 @@ content:
     weight: 1
     region: content
   field_block_image:
-    type: responsive_bg_image_formatter
+    type: bg_image_formatter
     label: hidden
     settings:
       image_style: main_100
