@@ -5,6 +5,9 @@ dependencies:
   config:
     - block_content.type.image_slider
     - field.field.block_content.image_slider.field_block_images
+    - views.view.block_images
+  module:
+    - eva
 id: block_content.image_slider.default
 targetEntityType: block_content
 bundle: image_slider
