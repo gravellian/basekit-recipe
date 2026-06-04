@@ -1,0 +1,17 @@
+uuid: 85a824e2-a2b9-404e-bf22-cf16e5b97596
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: manage_thumb
+label: manage_thumb
+effects:
+  ab833869-e0ae-4d65-997d-b4a8ee2daf55:
+    uuid: ab833869-e0ae-4d65-997d-b4a8ee2daf55
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      crop_type: focal_point

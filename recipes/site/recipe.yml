@@ -10,12 +10,12 @@ install:
 
 recipes:
   - basekit
-  - article
+  - paragraphs_base
   - blocks_hero_headline
   - blocks_hero_announcement
   - blocks_common
   - pages
-  - paragraphs_base
+  - article
   - profile_author
 config:
   strict: false

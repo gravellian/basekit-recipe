@@ -10,10 +10,10 @@ theme: basekit_site
 region: help
 weight: 0
 provider: null
-plugin: system_help_block
+plugin: help_block
 settings:
-  id: system_help_block
+  id: help_block
   label: Help
   label_display: '0'
-  provider: system
+  provider: help
 visibility: {  }
