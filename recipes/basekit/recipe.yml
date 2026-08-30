@@ -17,6 +17,7 @@ install:
   - drupal:webform
   - drupal:workflows
   # Admin UX
+  - drupal:toolbar
   - drupal:admin_toolbar
   - drupal:admin_toolbar_tools
   # Base content building blocks and storage.
