@@ -1,0 +1,12 @@
+uuid: 45dbfe6d-3adf-4d07-a25d-674578f4eae9
+langcode: en
+status: true
+dependencies: {  }
+id: full_bleed
+label: 'Full-bleed background'
+classes: block-full-bleed
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: -5
