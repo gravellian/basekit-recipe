@@ -55,6 +55,9 @@ install:
 config:
   strict: false
   actions:
+    node.settings:
+      simpleConfigUpdate:
+        use_admin_theme: true
     # Example theme mapping for region blocks (add entries if you include them):
     # - config: block.block.gravelle1_site_branding
     #   op: set
