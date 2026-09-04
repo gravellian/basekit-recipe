@@ -5,6 +5,7 @@ type: recipe
 install:
   - basekit
   - basekit_site
+  - gin
   - superfish
   - simple_sitemap
 
@@ -23,4 +24,4 @@ config:
     system.theme:
       simpleConfigUpdate:
         default: basekit_site
-        admin: basekit_site
+        admin: gin
