@@ -60,6 +60,9 @@ config:
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
+    gin.settings:
+      simpleConfigUpdate:
+        classic_toolbar: horizontal
     antibot.settings:
       simpleConfigUpdate:
         form_ids:
