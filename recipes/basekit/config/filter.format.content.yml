@@ -21,9 +21,10 @@ dependencies:
     - core.entity_view_mode.media.main_66_4x3
   module:
     - media
+    - prism
 format: content
-name: 'Content'
-weight: 0
+name: 'Content Editor'
+weight: -10
 filters:
   filter_align:
     id: filter_align
@@ -46,6 +47,12 @@ filters:
       allowed_html: '<br> <p class="copy-smallest copy-small copy-normal copy-large copy-largest text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <span class="font-body font-heading font-heading-narrow copy-smallest copy-small copy-normal copy-large copy-largest text-primary text-accent text-secondary text-neutral text-light underline-accent surface-light surface-primary surface-accent"> <strong> <em> <code class="language-*"> <pre class="text-align-left text-align-center text-align-right text-align-justify"> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-view-mode data-caption data-align>'
       filter_html_help: false
       filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
   filter_autop:
     id: filter_autop
     provider: filter
@@ -64,7 +71,7 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: default
+      default_view_mode: main_25
       allowed_view_modes:
         default: default
         main_100: main_100
@@ -85,3 +92,10 @@ filters:
         main_66_4x3: main_66_4x3
       allowed_media_types:
         image: image
+  prism_filter:
+    id: prism_filter
+    provider: prism
+    status: true
+    weight: 0
+    settings:
+      always_include_prism_library: false

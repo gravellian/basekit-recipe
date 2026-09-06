@@ -1,4 +1,4 @@
-uuid: a8b4c1d2-3e4f-5a6b-7c8d-9e0f1a2b3c4d
+uuid: ad905e1a-6736-4cad-a737-fa27f2c8af7c
 langcode: en
 status: true
 dependencies:
@@ -20,35 +20,26 @@ dependencies:
     - core.entity_view_mode.media.main_66_16x9
     - core.entity_view_mode.media.main_66_4x3
   module:
+    - editor
     - media
-    - prism
-name: Article
-format: article
-weight: 0
+name: 'Content (advanced)'
+format: full_html
+weight: 10
 filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 11
+    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
     status: true
-    weight: 0
+    weight: 8
     settings: {  }
   filter_caption:
     id: filter_caption
-    provider: filter
-    status: true
-    weight: 0
-    settings: {  }
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: true
-    weight: -10
-    settings:
-      allowed_html: '<br> <p class="copy-smallest copy-small copy-normal copy-large copy-largest text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <span class="font-body font-heading font-heading-narrow copy-smallest copy-small copy-normal copy-large copy-largest text-primary text-accent text-secondary text-neutral text-light underline-accent surface-light surface-primary surface-accent"> <strong> <em> <code class="language-*"> <pre class="text-align-left text-align-center text-align-right text-align-justify"> <blockquote> <a href> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-view-mode data-caption data-align>'
-      filter_html_help: true
-      filter_html_nofollow: false
-  filter_html_image_secure:
-    id: filter_html_image_secure
     provider: filter
     status: true
     weight: 9
@@ -59,13 +50,19 @@ filters:
     status: true
     weight: 10
     settings: {  }
+  filter_image_lazy_load:
+    id: filter_image_lazy_load
+    provider: filter
+    status: true
+    weight: 15
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
     status: true
     weight: 100
     settings:
-      default_view_mode: default
+      default_view_mode: main_25
       allowed_view_modes:
         default: default
         main_100: main_100
@@ -86,10 +83,3 @@ filters:
         main_66_4x3: main_66_4x3
       allowed_media_types:
         image: image
-  prism_filter:
-    id: prism_filter
-    provider: prism
-    status: true
-    weight: 0
-    settings:
-      always_include_prism_library: false

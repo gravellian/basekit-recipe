@@ -16,4 +16,6 @@ permissions:
   - 'delete own author profile'
   - 'update any author profile'
   - 'update own author profile'
+  - 'use text format content'
+  - 'use text format text_only'
   - 'view own unpublished profile'

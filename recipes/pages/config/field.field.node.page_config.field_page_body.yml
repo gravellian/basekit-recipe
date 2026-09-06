@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_page_body
     - filter.format.content
+    - filter.format.full_html
     - node.type.page_config
   module:
     - text
@@ -23,4 +24,5 @@ settings:
   required_summary: false
   allowed_formats:
     - content
+    - full_html
 field_type: text_with_summary

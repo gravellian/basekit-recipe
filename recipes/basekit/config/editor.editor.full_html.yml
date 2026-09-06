@@ -1,12 +1,12 @@
-uuid: 0fd2e2f1-0e9c-4c4d-a5c5-1c2b3a4d5e6f
+uuid: bc8e3959-4fa3-4d2f-97c9-83ca14e53949
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.article
+    - filter.format.full_html
   module:
     - ckeditor5
-format: article
+format: full_html
 editor: ckeditor5
 settings:
   toolbar:
@@ -18,6 +18,10 @@ settings:
       - insertTable
       - bold
       - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
       - bulletedList
       - numberedList
       - '|'
@@ -94,14 +98,16 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
     ckeditor5_list:
       properties:
         reversed: true
         startIndex: true
+        styles: true
       multiBlock: true
     ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<span>'
+      allowed_tags: {  }
     ckeditor5_style:
       styles:
         -
@@ -173,4 +179,10 @@ settings:
     media_media:
       allow_view_mode_override: true
 image_upload:
-  status: false
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null
