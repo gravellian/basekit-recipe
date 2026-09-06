@@ -15,8 +15,11 @@ install:
   - drupal:editor
   - drupal:ckeditor5
   - drupal:webform
-  - drupal:antibot
-  - drupal:honeypot
+  # These two names must remain unqualified because config-action validation
+  # compares providers with the literal install list before dependencies are
+  # normalized.
+  - antibot
+  - honeypot
   - drupal:workflows
   # Admin UX
   - drupal:gin
